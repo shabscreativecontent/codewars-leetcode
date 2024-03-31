@@ -87,3 +87,17 @@ document.querySelector('.stop').addEventListener('click', (e)=>{
 // Note: for this kata y isn't considered a vowel.
 
 
+function disemvowel(str) {
+  let vowels = ['a','e','i','o','u']
+  let result = ''
+
+  for(let i = 0; i < str.length; i++){
+    if (!vowels.includes(str[i].toLowerCase())) {
+      result += str[i]
+    }
+  }
+  
+  return result;
+}
+
+console.log(disemvowel("shedRAck love food"));
