@@ -157,3 +157,17 @@ console.log(helloWorld());
 // * "1234!_ "     -> "11223344!!__  "
 // Good Luck!
 
+function doubleChar(str, n) {
+  // Your code here
+  let doubleC = []
+
+  for (let j = 0; j < str.length; j++) {
+    for(let i = 0; i < n; i++){
+      doubleC = doubleC.concat(str[j])
+    }
+  }
+
+  console.log(doubleC.join(''));
+}
+
+doubleChar('bONy', 2)
