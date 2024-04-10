@@ -170,4 +170,10 @@ function doubleChar(str, n) {
   console.log(doubleC.join(''));
 }
 
+// OR
+
+function doubleChar1(str) {
+	
+};
+
 doubleChar('bONy', 2)
