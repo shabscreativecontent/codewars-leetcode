@@ -173,7 +173,11 @@ function doubleChar(str, n) {
 // OR
 
 function doubleChar1(str) {
-	
+	var word = '';
+  for (var i = 0; i < str.length; i++){
+  	word = word + str[i] + str[i];
+  };
+  return word;
 };
 
-doubleChar('bONy', 2)
+doubleChar('bigBoy', 2)
