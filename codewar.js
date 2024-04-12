@@ -181,3 +181,13 @@ function doubleChar1(str) {
 };
 
 doubleChar('bigBoy', 2)
+
+
+// Given an arry of number, return an array of each number, squared
+
+const num = [1, 2, 3, 4, 5]
+const newNum = num.map(number => number * number)
+
+console.log(newNum);
+
+
