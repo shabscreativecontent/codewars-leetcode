@@ -191,3 +191,13 @@ const newNum = num.map(number => number * number)
 console.log(newNum);
 
 
+// given an array of strings, return an array where the first letter of each string is capitalized
+
+const names = ['alice', 'bob', 'charlie', 'danielle']
+
+let capsArr = names.map(word => {
+  return word[0].toUpperCase() + word.slice(1)
+})
+
+console.log(capsArr)
+
