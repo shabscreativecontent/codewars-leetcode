@@ -201,3 +201,13 @@ let capsArr = names.map(word => {
 
 console.log(capsArr)
 
+
+
+// Given: ["Bulbasaur", "Charmander", "Squirtle"]
+// Return: [<p>"Bulbasaur"</p>, <p>"Charmander"</p>, <p>"Squirtle"</p>]
+
+const givenP = ["Bulbasaur", "Charmander", "Squirtle"]
+
+const domElement = givenP.map(sentence => `<p>${sentence}</p>`)
+
+console.log(domElement);
