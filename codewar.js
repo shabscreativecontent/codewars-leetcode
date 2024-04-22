@@ -292,3 +292,14 @@ console.log(boolToWord(false));
 function boolToWord1( bool ){
   return bool ? 'Yes':'No';
 }
+
+
+// React Event loop
+// Using setState method by using React.useState()
+
+const {things, setThings} = React.useState(['things 1', 'things 2'])
+
+function addItem(){
+  const newThingText = `things ${things.length + 1}`
+  setThings(prevState => [...prevState, newThingText])
+}
