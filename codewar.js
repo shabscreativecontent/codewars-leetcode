@@ -303,3 +303,13 @@ function addItem(){
   const newThingText = `things ${things.length + 1}`
   setThings(prevState => [...prevState, newThingText])
 }
+
+// Challenge: Replace our hard-coded "Yes" on the page with some state initiated with React.useState()
+
+function App(){
+  const [answer , setAnswer] = React.useState(['thing 1', 'thing 2'])
+
+  function handleClick(){
+    setAnswer(prevState => [...prevState, `things ${prevState.length + 1}`])
+  }
+}
