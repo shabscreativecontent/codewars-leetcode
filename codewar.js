@@ -297,7 +297,7 @@ function boolToWord1( bool ){
 // React Event loop
 // Using setState method by using React.useState()
 
-const {things, setThings} = React.useState(['things 1', 'things 2'])
+//// const {things, setThings} = React.useState(['things 1', 'things 2'])
 
 function addItem(){
   const newThingText = `things ${things.length + 1}`
@@ -307,9 +307,31 @@ function addItem(){
 // Challenge: Replace our hard-coded "Yes" on the page with some state initiated with React.useState()
 
 function App(){
-  const [answer , setAnswer] = React.useState(['thing 1', 'thing 2'])
+  ////const [answer , setAnswer] = React.useState(['thing 1', 'thing 2'])
 
   function handleClick(){
     setAnswer(prevState => [...prevState, `things ${prevState.length + 1}`])
   }
 }
+
+
+// Write a function named setAlarm/set_alarm/set-alarm/setalarm (depending on language) which receives two parameters. The first parameter, employed, is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
+
+// The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise. Examples:
+
+// employed | vacation 
+// true     | true     => false
+// true     | false    => true
+// false    | true     => false
+// false    | false    => false
+
+
+function setAlarm(employed, vacation){
+  if(employed === true && vacation === false){
+    return true
+  }else {
+    return false
+  } 
+}
+
+console.log(setAlarm(true, false));
