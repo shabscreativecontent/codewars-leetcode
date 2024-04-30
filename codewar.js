@@ -335,3 +335,7 @@ function setAlarm(employed, vacation){
 }
 
 console.log(setAlarm(true, false));
+
+// OR
+
+const setAlarm = (employed, vacation) => employed && !vacation;
