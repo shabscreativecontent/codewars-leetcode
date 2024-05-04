@@ -358,3 +358,8 @@ function lovefunc(flower1, flower2){
 
   return inLove
 }
+
+
+console.log(lovefunc(2, 5));
+
+// OR
