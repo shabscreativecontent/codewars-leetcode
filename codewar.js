@@ -397,3 +397,71 @@ function getGrade (s1, s2, s3) {
 
   // console.log(divTotal);
 }
+
+console.log(getGrade(70, 70, 40))
+
+// OR 
+
+function getGrade1 (s1, s2, s3) {
+  var s = (s1 + s2 + s3) / 3
+  return s >= 90 ? "A" : s >= 80 ? "B" : s >= 70 ? "C" : s >= 60 ? "D" : "F"
+
+}
+
+
+
+// Clock shows h hours, m minutes and s seconds after midnight.
+
+// Your task is to write a function which returns the time since midnight in milliseconds.
+
+// Example:
+// h = 0
+// m = 1
+// s = 1
+
+// result = 61000
+// Input constraints:
+
+// 0 <= h <= 23
+// 0 <= m <= 59
+// 0 <= s <= 59
+
+
+function past(h, m, s){
+  //#Happy Coding! ^_^
+  let d = new Date()
+  let sTime = d.setHours(h,m,s)
+
+  let time = Math.abs(sTime / 1000)
+
+  return time / 86400
+}
+
+console.log(past(0,1,1));
+
+
+// Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+// Examples
+// "This is an example!" ==> "sihT si na !elpmaxe"
+// "double  spaces"      ==> "elbuod  secaps"
+
+function reverseWords(str) {
+  // Go for it
+  const convertToArr = str.split(' ')
+  const reverseMap = convertToArr.map(item => item.split('').reverse().join(''))
+  const reverseStr = reverseMap.join(' ')
+
+  return reverseStr
+}
+
+console.log(reverseWords('ajide shedrack'));
+
+
+// OR
+
+function reverseWords1(str) {
+  // Go for it
+  //split words into seperate arrays
+  return str.split("").reverse().join("").split(" ").reverse().join(" ");
+}
